@@ -3,50 +3,90 @@
   <head>
     <meta charset="utf-8">
     <title>Forms</title>
+
+    <style type="text/css">
+      * {
+        padding: 0;
+      }
+       #search {}
+       .container {
+           width: 320px;
+           background-color: #778899;
+           margin: 0 auto;
+           padding: 20px;
+       }
+       img[src] {border: 2px solid #ff0000;}
+       img[alt] {border: 2px solid #00ff00;}
+       img[alt^="s"] {border: 2px solid #0000ff;}
+       label {display: inline-block;
+        width: 100%}
+       .box {border: 2px solid #ff4500; 
+        padding: 15px;
+        margin: 50px 100px}
+        p {
+          padding: 10px;
+        }
+    </style>
   </head>
   <body>
 
-    <form class="" action="#" method="get">
-      <div class="">
-          <label for="">
-            Ваше имя
-            <input type="text" name="" value="">
+<div class="container">
+<form method="GET" id="search">
+
+        <p> 
+          <label for="name">ФИО</label>
+          <input type="text" name="queru" id="name" placeholder="ФИО"> </p>    
+      
+        <p>
+          <label for="email">Почта</label>
+          <input type="text" name="email" id="email" placeholder="Почта"> </p>  
+
+        <div>
+          <label for="faculty">Факультет</label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Гриффиндор
           </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Когтевран
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Пуффендуй
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Слизерин
+          </label>
+
+        </div>
+
+         <div>
+          <p>
+          <label for="cource">Курс</label> 
+          </p>
+          
+
+        <p>
+          
+          <select name="cource" id="cource">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+          </select>
+        </p>  
+        </div>
+
+        <p>
+          <label for="About">Задайте свой вопрос</label>
+          <textarea rows="10" cols="40" id="About" placeholder="Вопросы"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
       </div>
-
-      <div class="">
-        <input type="checkbox" name="a" value="">
-        <input type="checkbox" name="a" value="">
-        <input type="checkbox" name="a" value="">
-      </div>
-
-      <div class="">
-        <input type="radio" name="b" value="">
-        <input type="radio" name="b" value="">
-        <input type="radio" name="b" value="">
-      </div>
-
-      <div class="">
-        <textarea name="name" rows="1" cols="80"></textarea>
-      </div>
-
-      <div class="">
-        <select class="" name="">
-          <option value="1">Первый</option>
-          <option value="2">Второй</option>
-        </select>
-      </div>
-
-      <div class="">
-        <select class="" name="" multiple>
-          <option value="1">Первый</option>
-          <option value="2">Второй</option>
-        </select>
-      </div>
-
-      <button type="submit" name="button" value="send">Submit</button>
-
-    </form>
-
   </body>
 </html>
