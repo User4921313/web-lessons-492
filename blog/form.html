@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+   <title>Post1</title>
+</head>
+<body style="background: url(../images/picture0.jpg);">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Главная</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Новости
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="post1.html">№1</a></li>
+                        <li><a class="dropdown-item" href="post2.html">№2</a></li>
+                        <li><a class="dropdown-item" href="post3.html">№3</a></li>
+                    </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Галерея
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="images1.html">Квиддич Гриффиндор/Слизерин</a></li>
+                        <li><a class="dropdown-item" href="images2.html">Святочный бал</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="images3.html">Преподаватели</a></li>
+                        <li><a class="dropdown-item" href="images4.html">Студенты</a></li>
+                    </ul>
+                        </li>
+                        <a class="nav-link active" aria-current="page" href="form.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Поиск</button>
+                    </form>
+                </div>
+        </div>
+    </nav>
+<div class="container">
+    <div class="row" style="font-size: 110%; color: black; ">
+        
+        <div class="col-12" style="margin: 0px 0px 10px 0px;" >
+            <div class="container">
+                <div class="card text-black">
+                <img src="../images/0.jpg" class="card-img" alt="Картинка">
+                <div class="card-img-overlay">
+                <h5 class="card-title" style="font-size: 350%;">Hogwarts news</h5>
+                </div>
+                </div>
+            </div>
+
+          
+        </div>
+        
+        <div class="col-9 mt ">
+            <div class="container">
+                <p><center>По всем вопросам, комментариям, рекламе и предложениям о сотрудничестве вы можете обращаться, заполнив форму.</center> </p>  
+                <div class="container">
+                    <form method="GET" id="search" style="width: 40%; margin: 0 auto; padding: 20px;">
+
+        <p> 
+          <label for="name">ФИО</label>
+          <input type="text" name="queru" id="name" placeholder="ФИО"> </p>    
+      
+        <p>
+          <label for="email">Почта</label>
+          <input type="text" name="email" id="email" placeholder="Почта"> </p>  
+
+        <div>
+          <label for="faculty">Факультет</label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Гриффиндор
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Когтевран
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Пуффендуй
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Слизерин
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Преподаватель
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Родитель
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Другое
+          </label>
+        </div>
+        <p></p>
+
+         <div>
+          <p>
+          <label for="cource">Курс</label> 
+          </p>
+          
+
+        <p>
+          
+          <select name="cource" id="cource">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>Преподаватель</option>
+            <option>Родитель</option>
+            <option>Другое</option>
+          </select>
+        </p>  
+        </div>
+
+        <p>
+          <label for="About">Задайте свой вопрос</label>
+          <textarea rows="10" cols="40" id="About" placeholder="Вопросы"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+
+       
+
+    </form>   
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="col-3 mt-3 ">
+            
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-dark"><a class="dropdown-item" href="images.html">Архив</a></li>
+                <li class="list-group-item list-group-item-secondary"><a class="dropdown-item" href="images1.html">Квиддич</a></li>
+                <li class="list-group-item list-group-item-secondary"><a class="dropdown-item" href="images2.html">Святочный бал</a></li>
+                <li class="list-group-item list-group-item-secondary"><a class="dropdown-item" href="images3.html">Преподаватели</a></li>
+                <li class="list-group-item list-group-item-secondary"><a class="dropdown-item" href="images4.html">Студенты</a></li>
+            </ul>
+            
+
+        </div>
+
+            
+    </div>
+</div>        
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="fixed-bottom">
+            <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+            <li class="page-item">
+            <a class="page-link" href="images.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="images.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="form.html">3</a></li>
+            <li class="page-item disabled">
+            <a class="page-link" href="#">Next</a>
+            </li>
+            </ul>
+            </nav>
+        </div>
+    </div>
+
+
+           <!-- Пакет JavaScript с Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
