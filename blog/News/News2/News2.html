@@ -1,74 +1,177 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-   <title>Post1</title>
-</head>
-<body style="background: url(../images/picture0.jpg);">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Главная</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Новости
-                        </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="post1.html">№1</a></li>
-                        <li><a class="dropdown-item" href="post2.html">№2</a></li>
-                        <li><a class="dropdown-item" href="post3.html">№3</a></li>
-                    </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Галерея
-                        </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="images1.html">Квиддич Гриффиндор/Слизерин</a></li>
-                        <li><a class="dropdown-item" href="images2.html">Святочный бал</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="images3.html">Преподаватели</a></li>
-                        <li><a class="dropdown-item" href="images4.html">Студенты</a></li>
-                    </ul>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="form.html">Контакты</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Поиск</button>
-                    </form>
-                </div>
-        </div>
-    </nav>
-<div class="container">
-    <div class="row" style="font-size: 110%; color: black; ">
-        
-        <div class="col-12" style="margin: 0px 0px 10px 0px;" >
-            <div class="container">
-                <div class="card text-black">
-                <img src="../images/0.jpg" class="card-img" alt="Картинка">
-                <div class="card-img-overlay">
-                <h5 class="card-title" style="font-size: 350%;"><i><strong>Hogwarts news</strong></i></h5>
-                </div>
-                </div>
-            </div>
+    <meta> 
+  <title>Новости</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Girassol';
+            src: url('Girassol/Girassol-Regular.eot');
+            src: url('Girassol/Girassol-Regular.eot') format('embedded-opentype'), 
+            url('Girassol/Girassol-Regular.woff')format('woff'), 
+            url('Girassol/Girassol-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal}
 
-          
-        </div>
+        .base 
+            {background-image: url(../../Home/picture0.jpg);
+            background-size: 100%;
+            font-family: Girassol-Regular;
+            font-size: 20px}
+
+        .table1 
+            {font-size: 100%; 
+            width: 100%;
+            height: 100%} 
+
+        .container {
+            width: 100%; /* Ширина слоя */
+            margin: 0 auto; /* Выравнивнить весь блок по центру */
+            background: #ededed;} /* Цвет фона левой колонки */
+
+        .header {
+            font-size: 36px; /* Размер текста в шапке */
+            text-align: center; /* Выравнивание текст шапки по центру */
+            padding: 5px; /* Отступы внутри блока шапки */
+            background: #d1d1d1; /* Цвет фона шапки */
+            color: #000;} /* Цвет текста */  
+
+        .header img {
+            float: left;
+            width: 190px;
+            height: 190px;
+            background: #555;}
+
+        .header h1 {
+           position: relative;
+           top: -50px;
+           left: center;}
+
+        .container{
+           position: relative;}
+
+        .header {
+           position: absolute;
+           bottom: 100px;
+           left: 410px;
+           top: 80px;
+           right: 410px;
+           background-color: #d1d1d1;
+           opacity: .7;
+           color: #000;
+           margin-left: auto;
+           margin-right: auto;
+           margin-bottom: auto;
+           margin-top: auto;}
+  
+        .image1 {
+           position: relative;
+           top: 0;
+           left: 130px;}
+
+        .image2 {
+           position: absolute;
+           top: 20px;
+           left: 0px;}
+
+        .image3 {
+           position: absolute;
+           top: 20px;
+           right: 0px;}
+
+        h2 {
+           font-size: 24px;
+           text-align: center}
+
+        h3 {
+           font-size: 20px;
+           text-align: center}   
+
+        .table1 img {margin: 0.5%;}  
+
+        td { 
+           padding: 1%}
         
-        <div class="col-9 mt ">
-            <div class="container">
-                <img src="News/News2/photos1.jpg" alt="Фото1" width="35%" align="left" style="margin: 0px 5px 5px 0px">
-                <h2>По стопам Мародёров</h2>
-                <p>Уже ни для кого не секрет, что знаменитые в своё время Мародёры, как истинные гриффиндорцы сумели самостоятельно, нарушив все правила стать незарегистрированными анимагами. Чтобы избежать подобных инцидентов, министерство пришло к решению о введении дополнительного курса, для желажщих освоить эту науку.</p>
+        p {
+          text-indent: 25px}   
+ 
+.social-icons ul{
+list-style: none;
+display: flex;
+justify-content: center;
+}
+.social-icons ul li a span {
+color: #000;
+width: 34px;
+background: #fff;
+height: 34px;
+text-align: center;
+line-height: 34px;
+border-radius: 20px;
+font-size: 13px;
+margin: 0px 2px;
+border-radius: 20px;
+font-size: 14px;
+margin: 0px 2px;
+transition: 0.5s all;
+-webkit-transition: 0.5s all;
+transition: 0.5s all;
+-moz-transition: 0.5s all;
+}
+.social-icons ul li a span:hover{color:#0ccbf1;}
+.copy-bottom-txt p{text-align: center; font-size:24px;
+color:#000;
+}
+.social-icons ul li:nth-child(2){
+margin: 0 10px;
+}
+.copy-bottom-txt p a {
+font-size: 18px;
+color:#000;
+letter-spacing: 1px;
+transition: .4s;
+}
+.copy-bottom-txt p a:hover {
+color: #000;
+text-decoration: underline;
+padding-top: 4px;
+font-weight: 700;
+}
+
+    </style>
+</head>
+<body class="base" link=#000 vlink=#1f1f1f alink=#1f1f1f bgcolor=black>
+     <a href="../../Home/index.html"><div class="container">
+    <img class="image1" src="../../Home/papyrus1.png" width="1200" height="270" alt="background-image">
+    <img class="image2" src="../../Home/blazon.png" width="200" height="200" alt="логотип">
+    <img class="image3" src="../../Home/blazon.png" width="200" height="200" alt="логотип">
+    <div class="header">
+    <h1>Хогвартские вести</h1>
+    </div>
+  </div></a>
+   
+   
+   
+<table border="5"  class="table1">
+           <thead>
+               <tr>
+                   <th style="width: 100%; ">
+                       <a href="../../Home/index.html">Главная</a>
+                       <a href="../../News/News.html">Новости</a>
+                       <a href="../../Gallery/Gallery.html">Галерея</a>
+                       <a href="../../Contact/Contact.html">Контакты</a>
+                   </th>
+
+               </tr>
+           </thead>
+
+           <tbody>
+               <tr>
+                   <td>
+                    <img src="photos1.jpg" alt="Фото1" width="25%" align="left">
+                    <h2>По стопам Мародёров</h2>
+                    <!-- После того как выяснилось, что знаменитые Мародёры являлись незарегистрированными анимагами, министерство пошло на уступки и разрешило ввести дополнительный курс для всех желающих -->
+                    <p>Уже ни для кого не секрет, что знаменитые в своё время Мародёры, как истинные гриффиндорцы сумели самостоятельно, нарушив все правила стать незарегистрированными анимагами. Чтобы избежать подобных инцидентов, министерство пришло к решению о введении дополнительного курса, для желажщих освоить эту науку.</p>
                     <h3>Небольшая сводка о Анимагах:</h3>
                     <p>Анимаг - (от лат. animal — животное и magus — маг) — это ведьма или волшебник, способный по желанию превратиться в некое животное. Пребывающий в животной форме по большей части сохраняет способности к человеческому мышлению, осознание своего Я и свои воспоминания. Также анимаг сохраняет нормальную человеческую продолжительность жизни, даже если надолго принимает свою животную форму. Тем не менее, чувства и эмоции упрощаются и у анимага появляется много животных устремлений, например, питаться вместо человеческой еды тем, чего жаждет их животное тело.</p>
 
@@ -82,7 +185,7 @@
 
                     <p> Для превращения в анимага необходимо иметь талант и в трансфигурации, и в зельях. Данная инструкция не предполагает ни малейшей возможности делегировать любую физическую или психическую обязанность.</p>
 
-                    <img src="News/News2/photos2.jpg" alt="Фото1" width="35%" align="right" style="margin: 0px 0px 5px 5px">
+                    <img src="photos2.jpg" alt="Фото1" width="25%" align="right">
 
                     <p> 1. На протяжении целого месяца (от полнолуния до полнолуния) во рту должен находиться лист мандрагоры. Лист нельзя глотать или хотя бы раз вынимать изо рта. Если лист убран изо рта, процесс необходимо начать сначала.</p>
 
@@ -98,7 +201,7 @@
 
                     <p> 7. Если всё прошло правильно, появится ощущение обжигающей боли и сильного двойного сердцебиения. В голове появится форма существа, в которое в скором времени доведётся превратиться. Не следует выказывать ни малейшего страха. Уже слишком поздно, чтобы избежать вызванных изменений.</p>
 
-                    <img src="News/News2/photos4.jpg" alt="Фото1" width="35%" align="left" style="margin: 0px 5px 5px 0px">
+                    <img src="photos4.jpg" alt="Фото1" width="25%" align="left">
 
                     <p> 8. Первая трансформация, как правило, неудобна и пугающа. Одежда и вещи, такие как очки или драгоценности, сливаются с кожей и становятся единым целым с мехом, чешуёй или шипами. Не надо сопротивляться и паниковать, иначе разум животного может возобладать и реально совершить какую-нибудь глупость, например, попытаться сбежать через окно или врезаться в стену.</p>
 
@@ -108,60 +211,32 @@
 
                     <p> Вроде бы животное, в которое превращается анимаг, так же становится его патронусом. Неизвестно ни одного случая, чтобы анимагическая форма менялась, подстраиваясь под патронус, если менялся последний, но, с другой стороны, анимаг, так же способный вызвать патронуса, весьма необычен сам по себе, и никогда не проводилось должных исследований, чтобы можно было сделать окончательные выводы.</p>
 
-                    <p> Законопослушных, зарегистрированных в министерстве анимагов немного. За весь двадцатый век их набралось только семь. Названа только одна волшебница-анимаг, Минерва МакГонагалл, которая превращается в кошку.</p>        
-            </div>
+                    <p> Законопослушных, зарегистрированных в министерстве анимагов немного. За весь двадцатый век их набралось только семь. Названа только одна волшебница-анимаг, Минерва МакГонагалл, которая превращается в кошку.</p>
+                    
+                   
+               </td>
+                   
+           </tbody>
+ 
+
+       </table>   
             
-
-        </div>
-
-        <div class="col-3 mt-3 ">
-            
-            <ul class="list-group">
-                <li class="list-group-item list-group-item-dark"><a class="dropdown-item" href="images.html">Архив</a></li>
-                <li class="list-group-item list-group-item-secondary"><a class="dropdown-item" href="images1.html">Квиддич</a></li>
-                <li class="list-group-item list-group-item-secondary"><a class="dropdown-item" href="images2.html">Святочный бал</a></li>
-                <li class="list-group-item list-group-item-secondary"><a class="dropdown-item" href="images3.html">Преподаватели</a></li>
-                <li class="list-group-item list-group-item-secondary"><a class="dropdown-item" href="images4.html">Студенты</a></li>
-            </ul>
-            
-
-        </div>
-
-            
-    </div>
-</div>        
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container">
-        <div class="fixed-bottom">
-            <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-            <a class="page-link">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="post1.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="post2.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="post3.html">3</a></li>
-            <li class="page-item">
-            <a class="page-link" href="post2.html">Next</a>
-            </li>
-            </ul>
-            </nav>
-        </div>
-    </div>
-
-
-           <!-- Пакет JavaScript с Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <!-- Нужно подключение bootstrap.min.css -->
+<footer class="py-3">
+<div class="copy-bottom-txt text-center py-3">
+<p> 
+© Хогвартские вести 
+</p>
+</div>
+<div class="social-icons mt-lg-3 mt-2 text-center">
+<ul>
+<li><a href="https://vk.com/hogwarts_top" target="_blank"><span class="fa fa-vk"></span></a></li>
+<li><a href="https://twitter.com/jk_rowling" target="_blank"><span class="fa fa-twitter"></span></a></li>
+<li><a href="https://www.instagram.com/harrypotterfilm/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+</ul>
+</div>
+</footer>
+<!-- CDN подключение иконок fontawesome -->
+<script src="https://use.fontawesome.com/df966d76e1.js"></script>  
 </body>
 </html>
