@@ -6,6 +6,36 @@
    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
    <title>Catalog</title>
+   <style>
+       .rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating-mini span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgrey;
+}
+.rating-mini > span:before {
+    content: '★';
+}
+.rating-mini > span.active {
+    color: gold;
+}
+.form-check-input:checked { 
+background-color: #9932CC;
+
+}
+
+.btn: {
+    font-weight: 600;
+}
+.btn:hover, .form-check:hover,.dropdown-item:hover, .hov:hover {
+    background-color: #A9A9A9;
+}
+   </style>
 </head>
 <body style="background: url(../images/picture0.jpg);">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -70,7 +100,41 @@
 <div class="container">
     <div class="row" style="font-size: 110%; color: black; ">
         <div class="col-md-3 col-12">
-          
+           
+           <nav class="navbar navbar-light bg-light">
+              <div class="container-fluid">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Поиск по категории" aria-label="Search">
+                  <button class="btn btn-light" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </div>
+            </nav> 
+
+                
+
+
+            <div class="list-group">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Первый чекбокс
+                      </label>
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Второй чекбокс
+                      </label>
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Третий чекбокс
+                      </label>
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Четвертый чекбокс
+                      </label>
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Пятый чекбокс
+                      </label>
+                    </div>  
             
             
 
@@ -80,54 +144,294 @@
        
         <div class="col-md-9 col-12">
             <div class="row">
-
-                <div class="col-12 col-md-4 col-sm-6">
-                    <div class="card">
-                        <div class="card-header p-0">
-                            <img class="card-img-top" src="images/shop/fd01113951cc95a7e8d31ea6a7015ff4ae713fed7990e5aa3f357365cc8ae615.jpg.webp">
-                        </div>
-                        <div class="card-body">
-                               
-                                <a class="card-titel" href=""> Квадрокоптер JJRC H83 зеленый [полет - 6 мин, радиус действия - 25 м, пульт ДУ]
-                                </a>
-                            <div class="card-text my-1">
-                                <div class="row">
-                                    <div class="col-6"><div class="border border-1 rounded-pill p-1 ps-2">
+            <div class="col-12 col-md-4 col-sm-6">
+                <div class="card"  >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products/fd01113951cc95a7e8d31ea6a7015ff4ae713fed7990e5aa3f357365cc8ae615.jpg.webp">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="cars-title">Квадрокоптер JJRC H83 зеленый [полет - 6 мин, радиус действия - 25 м, пульт ДУ]</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6">
+                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
                                 <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Сравнить
-                                  </label>
-                                </div>
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Сравнить
+  </label>
+</div>
                             </div>
                         </div>
-                                    <div class="col-6">
-                                        <div class="rounded-pill"></div>    
-                                    </div>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                </div>
-                                
-                            
-                        </div>
-                        <div class="card-footer"></div>
+                        <div class="col-6 ">
+                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span class="active"></span>    
+    <span></span>
+</div> <span>35</span>
+                        </div>  
                     </div>
-
-                </div>
-                
-                <div class="col-12 col-md-4 col-sm-6">
-                    
-                </div>
-                
-                <div class="col-12 col-md-4 col-sm-6">
-                    
-                </div>
-
-            </div>
-                
-            
-
+<div class="row ">
+        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
+            <h3>1 299 ₽</h3>
         </div>
+        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
+                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: white">
+                        <p style="margin-bottom: 1%">В наличии: <a href="#"> в 7 магазинах </a></p>
+                        <p style="margin-bottom: 1%">Пункты выдачи:<a href="#"> доступны </a></p>
+                        <p>Доставим на дом:<a href="#"> за 2 часа</a></p>
+                    </div>          </div>
+            </div></div>
+            <div class="col-12 col-md-4 col-sm-6">
+            <div class="card" >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products/09846664166a59ceaa7a6d209ff2c31eefa913ac8e2bd8dc5e9444f354296f06.jpg.webp">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="cars-title">Квадрокоптер Syma X20-S белый [полет - 5 мин, радиус действия - 70 м, пульт ДУ]</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6">
+                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
+                                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau11">
+  <label class="form-check-label" for="flexCheckDefau11">
+    Сравнить
+  </label>
+</div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span class="active"></span>    
+    <span></span>
+</div> <span>67</span>
+                        </div>  
+                    </div>
+<div class="row ">
+        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
+            <h3>1 599 ₽</h3>
+        </div>
+        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
+                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: white">
+                        <p style="margin-bottom: 1%">В наличии: <a href="#"> в 6 магазинах </a></p>
+                        <p style="margin-bottom: 1%">Пункты выдачи:<a href="#"> доступны </a></p>
+                        <p>Доставим на дом:<a href="#"> за 2 часа</a></p>
+                    </div>          </div>  
+            </div></div>
+            <div class="col-12 col-md-4 col-sm-6">
+                <div class="card"  >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products/5869f690c80a525b95066e9bf7875b2267f2a01c528b1c90c7d85e551ab43e82.jpg.webp">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="cars-title">Квадрокоптер Syma X20-S черный [полет - 5 мин, радиус действия - 70 м, пульт ДУ]</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6">
+                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
+                                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau12">
+  <label class="form-check-label" for="flexCheckDefau12">
+    Сравнить
+  </label>
+</div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span class="active"></span>    
+    <span></span>
+</div> <span>67</span>
+                        </div>  
+                    </div>
+<div class="row ">
+        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
+            <h3>1 650 ₽</h3>
+        </div>
+        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
+                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: white">
+                        <p style="margin-bottom: 1%">В наличии: <a href="#"> в 6 магазинах </a></p>
+                        <p style="margin-bottom: 1%">Пункты выдачи:<a href="#"> доступны </a></p>
+                        <p>Доставим на дом:<a href="#"> за 2 часа</a></p>
+                    </div>          </div>
+            </div>
+        </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 col-md-4 col-sm-6">
+                <div class="card"  >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products/0b46e9276095fe7e310fc1cc773ead0b9e8214e4d31c1ebd67b7768e028afdf2.jpg.webp">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="cars-title">Квадрокоптер Syma X15A + battery белый [полет - 11 мин, радиус действия - 25 м, пульт ДУ]</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6">
+                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
+                                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau13">
+  <label class="form-check-label" for="flexCheckDefau13">
+    Сравнить
+  </label>
+</div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span class="active"></span>    
+    <span class="active"></span>
+</div> <span>73</span>
+                        </div>  
+                    </div>
+<div class="row ">
+        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
+            <h3>2 099 ₽</h3>
+        </div>
+        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
+                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: white">
+                        <p style="margin-bottom: 1%">В наличии: <a href="#"> в 3 магазинах </a></p>
+                        <p style="margin-bottom: 1%">Пункты выдачи:<a href="#"> доступны </a></p>
+                        <p>Доставим на дом:<a href="#"> за 2 часа</a></p>
+                    </div>          </div>
+            </div></div>
+            <div class="col-12 col-md-4 col-sm-6">
+            <div class="card" >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products/b38cd2432fa98ab1af9234053a85910f02aeb14c558333003c91403364b86dbf.jpg.webp">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="cars-title">Квадрокоптер Syma X15A + battery черный [полет - 11 мин, радиус действия - 25 м, пульт ДУ]</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6">
+                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
+                                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau14">
+  <label class="form-check-label" for="flexCheckDefau14">
+    Сравнить
+  </label>
+</div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span ></span>    
+    <span></span>
+</div> <span>42</span>
+                        </div>  
+                    </div>
+<div class="row ">
+        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
+            <h3>2 099 ₽</h3>
+        </div>
+        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
+                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: white">
+                        <p style="margin-bottom: 1%">В наличии: <a href="#"> в 6 магазинах </a></p>
+                        <p style="margin-bottom: 1%">Пункты выдачи:<a href="#"> доступны </a></p>
+                        <p>Доставим на дом:<a href="#"> за 2 часа</a></p>
+                    </div>          </div>  
+            </div></div>
+            <div class="col-12 col-md-4 col-sm-6">
+                <div class="card"  >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products/dac190326ea11b8817cc480e2de8eb15e10c6b2060a3bf852f4e772326ba1ca5.jpg.webp">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="cars-title">Квадрокоптер HIPER Falcon X[ HQT-0002 ]+ battery зеленый, черный [полет - 6 мин, радиус действия - 60 м, пульт ДУ]</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6">
+                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
+                                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau15">
+  <label class="form-check-label" for="flexCheckDefau15">
+    Сравнить
+  </label>
+</div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span class="active"></span>    
+    <span class="active"></span>
+</div> <span>18</span>
+                        </div>  
+                    </div>
+<div class="row ">
+        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
+            <h3>2 499 ₽</h3>
+        </div>
+        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
+                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: white">
+                        <p style="margin-bottom: 1%">В наличии: <a href="#"> в 7 магазинах </a></p>
+                        <p style="margin-bottom: 1%">Пункты выдачи:<a href="#"> доступны </a></p>
+                        <p>Доставим на дом:<a href="#"> за 2 часа</a></p>
+                    </div>          </div>
+            </div>
+        </div>
+        </div>
+
 
         
 
