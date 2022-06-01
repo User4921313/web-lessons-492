@@ -1,0 +1,80 @@
+body {
+	background-color: #000000;
+	font-size: 16px;
+}
+
+
+div.topp { 
+	background-color: #FA820A;
+	text-color: #000000;
+	
+}
+
+div.next { 
+	background-color: #000000;
+	text-color: #000000;
+	
+}
+
+button {
+	
+}
+
+.card.text-black {
+	background-color: #000000;
+}
+.card {
+	background-color: #F3B721;
+	color: #000000;
+}
+
+
+.list-group-item {
+	background-color: #F3B721;
+}
+
+a.page-link {
+	background-color: #F3B721;
+	border-color: #FA820A;
+}
+
+li.page-item.disabled {
+	background-color: #F3B721;
+	border-color: #FA820A;
+}
+
+a.page-link {
+	color: #000000;
+}
+a.dropdown-item {
+	color: #000000;
+}
+
+.statia{
+	color: #F3B721;
+}
+input.form-control{
+	border-color: #FA820A;
+	background-color: ##CDC7B9;
+	color: #000000;
+}
+textarea.form-control{
+	border-color: #FA820A;
+	background-color: ##CDC7B9;
+	color: #000000;
+}
+
+a.cars-title {
+	color: #000000;
+	text-decoration: none;
+}
+
+.ooo {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.aoa{
+	color: #FA820A;
+	text-decoration: none;
+}
