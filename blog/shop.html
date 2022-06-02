@@ -8,7 +8,7 @@
    <link rel="stylesheet" type="text/css" href="../css/style.css">
    <title>Shop</title>
    <style>
-       .rating-mini {
+       /*.rating-mini {
     display: inline-block;
     font-size: 0;
 }
@@ -35,7 +35,7 @@ background-color: #FA820A;
 }
 .btn:hover, .form-check:hover,.dropdown-item:hover, .hov:hover {
     background-color: #FA820A;
-}
+}*/
    </style>
 </head>
 <body>
@@ -113,7 +113,7 @@ background-color: #FA820A;
         
       <div class="row"><form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
-        <button style="border: none; background-color: #F3B721; color:lightgrey" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <button style="border: none; background-color: #F3B721; color: black;" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
       </form></div>
       <p style="margin-bottom: 0;" class="border border-1 rounded mt-3 ">
  
@@ -127,7 +127,7 @@ background-color: #FA820A;
   <div></div></div>
    </div></div>
   </div>
-          <p style="margin-bottom: 0; border-right: solid 1px lightgrey;border-left: solid 1px lightgrey;">
+          <p style="margin-bottom: 0; border-right: solid 1px #FA820A;border-left: solid 1px #FA820A;">
   <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" style="width:100%; background-color: #F3B721;"><span style="position: relative; float: left"><i class="fa fa-chevron-down" aria-hidden="true"></i>
     Волшебные палочки</span>
   </button>
@@ -153,7 +153,7 @@ background-color: #FA820A;
              светящиеся Lumos
             </label>
       </div></div></div></div>
-      <p style="margin-bottom: 0; border-right: solid 1px lightgrey;border-left: solid 1px lightgrey">
+      <p style="margin-bottom: 0; border-right: solid 1px #FA820A;border-left: solid 1px #FA820A">
  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6" style="width:100%; background-color: #F3B721;"><span style="position: relative; float: left"><i class="fa fa-chevron-down" aria-hidden="true"></i>
     Одежда</span>
   </button>
@@ -188,7 +188,7 @@ background-color: #FA820A;
   </label></div>
   </div>
 </div></form></div>
-<p style="margin-bottom: 0; border-right: solid 1px lightgrey;border-left: solid 1px lightgrey">
+<p style="margin-bottom: 0; border-right: solid 1px #FA820A;border-left: solid 1px #FA820A">
   <button class="btn  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7" style="width:100%; background-color: #F3B721;"><span style="position: relative; float: left"><i class="fa fa-chevron-down" aria-hidden="true"></i>
     Коллекционные фигурки</span>
   </button>
@@ -214,7 +214,7 @@ background-color: #FA820A;
   
 </div></div>
 </div> 
-  <p style="margin-bottom: 0; border-right: solid 1px lightgrey;border-left: solid 1px lightgrey">
+  <p style="margin-bottom: 0; border-right: solid 1px #FA820A;border-left: solid 1px #FA820A">
  
   <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="width:100%; background-color: #F3B721;"><span style="position: relative; float: left"><i class="fa fa-chevron-down" aria-hidden="true"></i>
     Цена </span>
@@ -268,7 +268,7 @@ background-color: #FA820A;
                         <div class="card-text my-1">
                             <div class="row">
                                 <div class="col-6">
-                            <div class=" border border-1 rounded-pill p-1 ps-2 hov">
+                            <div class=" border border-dark border-1 rounded-pill p-1 ps-2 hov">
                                 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
@@ -278,31 +278,35 @@ background-color: #FA820A;
                             </div>
                         </div>
                         <div class="col-6 ">
-                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="border border-dark border-1 rounded-pill p-1 ps-2"> 
                             <div class="rating-mini ">
     <span class="active"></span>    
     <span class="active"></span>    
     <span class="active"></span>  
     <span class="active"></span>    
-    <span></span>
-</div> <span>35</span>
+    <span class="active"></span>
+</div> <span>53</span>
                         </div>  
                     </div>
 <div class="row ">
-        <div  class=" rounded p-1 m-1 ps-3 col-6" >
-            <h3>1 290 ₽</h3>
+        <div  class="rounded p-1 m-1 ps-4 col-6" >
+            <h3>990 ₽</h3>
         </div>
-        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
-                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
+        <div class="col-2 mt-2 ms-3 me-2" >
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-heart-o " aria-hidden="true" id="fi"></i></button>
+</div></div>
+
+<div class="col-2 mt-2">
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-shopping-cart " aria-hidden="true"></i></button></div></div>
                             </div>
                         </div>
                 </div>
                     <div class="card-footer" style="border-top: none; background-color: #F3B721">
                         <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
-                        <p style="margin-bottom: 1%">Пункты выдачи: <a class="ooo" href="#">доступны</a></p>
-                        <p>Отзывы: <a class="ooo" href="shop1.html#123">2 отзыва</a></p>
+                        <p style="margin-bottom: 1%">Доставка совой: <a class="ooo" href="#">доступна</a></p>
+                        <p>Отзывы: <a class="ooo" href="shop1.html#111">2 отзыва</a></p>
                     </div>          </div>
             </div></div>
             <div class="col-12 col-md-4 col-sm-6">
@@ -315,7 +319,7 @@ background-color: #FA820A;
                         <div class="card-text my-1">
                             <div class="row">
                                 <div class="col-6">
-                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
+                            <div class="border border-dark border-1 rounded-pill p-1 ps-2 hov">
                                 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau21">
   <label class="form-check-label" for="flexCheckDefau21">
@@ -325,31 +329,192 @@ background-color: #FA820A;
                             </div>
                         </div>
                         <div class="col-6 ">
-                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="border border-dark border-1 rounded-pill p-1 ps-2"> 
                             <div class="rating-mini ">
     <span class="active"></span>    
     <span class="active"></span>    
     <span class="active"></span>  
     <span class="active"></span>    
     <span></span>
-</div> <span>67</span>
+</div> <span>37</span>
                         </div>  
                     </div>
 <div class="row ">
-        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F3B721; ">
-            <h3>1 290 ₽</h3>
+        <div  class="rounded p-1 m-1 ps-4 col-6" style="background-color: #F3B721; ">
+            <h3>990 ₽</h3>
         </div>
-        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
-                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
+        <div class="col-2 mt-2 ms-3 me-2" >
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-heart-o " aria-hidden="true" id="fi"></i></button>
+</div></div>
+
+<div class="col-2 mt-2">
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-shopping-cart " aria-hidden="true"></i></button></div></div>
                             </div>
                         </div>
                 </div>
                     <div class="card-footer" style="border-top: none; background-color: #F3B721">
                         <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
-                        <p style="margin-bottom: 1%">Пункты выдачи: <a class="ooo" href="#">доступны</a></p>
-                        <p>Отзывы: <a class="ooo" href="#">2 отзыва</a></p>
+                        <p style="margin-bottom: 1%">Доставка совой: <a class="ooo" href="#">доступна</a></p>
+                        <p>Отзывы: <a class="ooo" href="shop2.html#122">1 отзыв</a></p>
+                    </div>          </div>  
+            </div></div>
+            
+        <div class="col-12 col-md-4 col-sm-6">
+                <div class="card"  >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products2/6.jpg">
+                    </div>
+                    <div class="card-body">
+                        <a href="shop6.html" class="cars-title">Funko POP! Lord Voldemort (with Nagini) ФАНКО ПОП! Лорд Волдеморт со змеёй</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6">
+                            <div class=" border border-dark border-1 rounded-pill p-1 ps-2 hov" >
+                                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau25">
+  <label class="form-check-label" for="flexCheckDefau25">
+    Сравнить
+  </label>
+</div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="border border-dark border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span></span>    
+    <span></span>
+</div> <span>18</span>
+                        </div>  
+                    </div>
+<div class="row ">
+        <div  class="rounded p-1 m-1 ps-4 col-6" style="background-color: #F3B721; ">
+            <h3>990    ₽</h3>
+        </div>
+        <div class="col-2 mt-2 ms-3 me-2" >
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-heart-o " aria-hidden="true" id="fi"></i></button>
+</div></div>
+
+<div class="col-2 mt-2">
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-shopping-cart " aria-hidden="true"></i></button></div></div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: #F3B721">
+                        <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
+                        <p style="margin-bottom: 1%">Доставка совой: <a class="ooo" href="#">доступна</a></p>
+                        <p>Отзывы: <a class="ooo" href="shop6.html#166">4 отзыва</a></p>
+                    </div>          </div>
+            </div>
+        </div>
+        </div> 
+        <div class="row mt-3">
+            <div class="col-12 col-md-4 col-sm-6">
+                <div class="card"  >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products2/4.jpg">
+                    </div>
+                    <div class="card-body">
+                        <a href="shop4.html" class="cars-title">Funko POP! Draco Malfoy ФАНКО ПОП! Драко Малфой</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6">
+                            <div class=" border border-dark border-1 rounded-pill p-1 ps-2 hov" >
+                                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau23">
+  <label class="form-check-label" for="flexCheckDefau23">
+    Сравнить
+  </label>
+</div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="border border-dark border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span class="active"></span>    
+    <span></span>
+</div> <span>43</span>
+                        </div>  
+                    </div>
+<div class="row ">
+        <div  class="rounded p-1 m-1 ps-4 col-6" style="background-color: #F3B721; ">
+            <h3>990 ₽</h3>
+        </div>
+        <div class="col-2 mt-2 ms-3 me-2" >
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-heart-o " aria-hidden="true" id="fi"></i></button>
+</div></div>
+
+<div class="col-2 mt-2">
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-shopping-cart " aria-hidden="true"></i></button></div></div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: #F3B721">
+                        <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
+                        <p style="margin-bottom: 1%">Доставка совой: <a class="ooo" href="#">доступна</a></p>
+                       <p>Отзывы: <a class="ooo" href="shop4.html#144">3 отзыва</a></p>
+                    </div>          </div>
+            </div></div>
+            <div class="col-12 col-md-4 col-sm-6">
+            <div class="card" >
+                    <div class="card-header p-0">
+                        <img class="card-img-top" src="images/products2/5.jpg">
+                    </div>
+                    <div class="card-body">
+                        <a href="shop5.html" class="cars-title">Funko POP! Severus Snape ФАНКО ПОП! Северус Снейп</a>
+                        <div class="card-text my-1">
+                            <div class="row">
+                                <div class="col-6" style="border-color: black">
+                            <div class=" border border-dark border-1 rounded-pill p-1 ps-2 hov">
+                                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau24">
+  <label class="form-check-label" for="flexCheckDefau24">
+    Сравнить
+  </label>
+</div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="border border-dark border-1 rounded-pill p-1 ps-2"> 
+                            <div class="rating-mini ">
+    <span class="active"></span>    
+    <span class="active"></span>    
+    <span class="active"></span>  
+    <span ></span>    
+    <span></span>
+</div> <span>42</span>
+                        </div>  
+                    </div>
+<div class="row ">
+        <div  class="rounded p-1 m-1 ps-4 col-6" style="background-color: #F3B721; ">
+            <h3>990 ₽</h3>
+        </div>
+        <div class="col-2 mt-2 ms-3 me-2" >
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-heart-o " aria-hidden="true" id="fi"></i></button>
+</div></div>
+
+<div class="col-2 mt-2">
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-shopping-cart " aria-hidden="true"></i></button></div></div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card-footer" style="border-top: none; background-color: #F3B721">
+                        <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
+                        <p style="margin-bottom: 1%">Доставка совой: <a class="ooo" href="#">доступна</a></p>
+                        <p>Отзывы: <a class="ooo" href="shop5.html#155">3 отзыва</a></p>
                     </div>          </div>  
             </div></div>
             <div class="col-12 col-md-4 col-sm-6">
@@ -362,7 +527,7 @@ background-color: #FA820A;
                         <div class="card-text my-1">
                             <div class="row">
                                 <div class="col-6">
-                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
+                            <div class=" border border-dark border-1 rounded-pill p-1 ps-2 hov" >
                                 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau22">
   <label class="form-check-label" for="flexCheckDefau22">
@@ -372,178 +537,41 @@ background-color: #FA820A;
                             </div>
                         </div>
                         <div class="col-6 ">
-                            <div class="border border-1 rounded-pill p-1 ps-2"> 
+                            <div class="border border-dark border-1 rounded-pill p-1 ps-2"> 
                             <div class="rating-mini ">
     <span class="active"></span>    
     <span class="active"></span>    
-    <span class="active"></span>  
-    <span class="active"></span>    
+    <span></span>  
+    <span></span>    
     <span></span>
-</div> <span>67</span>
+</div> <span>26</span>
                         </div>  
                     </div>
 <div class="row ">
-        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F3B721; ">
-            <h3>1 290 ₽</h3>
+        <div  class=" rounded p-1 m-1 ps-4 col-6" style="background-color: #F3B721; ">
+            <h3>990 ₽</h3>
         </div>
-        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
-                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
-                            </div>
+
+                <div class="col-2 mt-2 ms-3 me-2" >
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-heart-o " aria-hidden="true" id="fi"></i></button>
+</div></div>
+
+<div class="col-2 mt-2">
+<div class=" rounded-pill">
+<button type="button" class="btn btn-outline-dark"><i class="fa fa-shopping-cart " aria-hidden="true"></i></button></div>
+</div>
+
                         </div>
                 </div>
                     <div class="card-footer" style="border-top: none; background-color: #F3B721">
                         <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
-                        <p style="margin-bottom: 1%">Пункты выдачи: <a class="ooo" href="#">доступны</a></p>
-                        <p>Отзывы: <a class="ooo" href="#">2 отзыва</a></p>
+                        <p style="margin-bottom: 1%">Доставка совой: <a class="ooo" href="#">доступна</a></p>
+                        <p>Отзывы: <a class="ooo" href="shop3.html#133">0 отзывов</a></p>
                     </div>          </div>
             </div>
         </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-12 col-md-4 col-sm-6">
-                <div class="card"  >
-                    <div class="card-header p-0">
-                        <img class="card-img-top" src="images/products2/4.jpg">
-                    </div>
-                    <div class="card-body">
-                        <a href="shop4.html" class="cars-title">Funko POP! Draco Malfoy ФАНКО ПОП! Драко Малфой</a>
-                        <div class="card-text my-1">
-                            <div class="row">
-                                <div class="col-6">
-                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
-                                <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau23">
-  <label class="form-check-label" for="flexCheckDefau23">
-    Сравнить
-  </label>
-</div>
-                            </div>
-                        </div>
-                        <div class="col-6 ">
-                            <div class="border border-1 rounded-pill p-1 ps-2"> 
-                            <div class="rating-mini ">
-    <span class="active"></span>    
-    <span class="active"></span>    
-    <span class="active"></span>  
-    <span class="active"></span>    
-    <span class="active"></span>
-</div> <span>73</span>
-                        </div>  
-                    </div>
-<div class="row ">
-        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F3B721; ">
-            <h3>1 290 ₽</h3>
-        </div>
-        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
-                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
-                            </div>
-                        </div>
-                </div>
-                    <div class="card-footer" style="border-top: none; background-color: #F3B721">
-                        <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
-                        <p style="margin-bottom: 1%">Пункты выдачи: <a class="ooo" href="#">доступны</a></p>
-                       <p>Отзывы: <a class="ooo" href="#">2 отзыва</a></p>
-                    </div>          </div>
-            </div></div>
-            <div class="col-12 col-md-4 col-sm-6">
-            <div class="card" >
-                    <div class="card-header p-0">
-                        <img class="card-img-top" src="images/products2/5.jpg">
-                    </div>
-                    <div class="card-body">
-                        <a href="shop5.html" class="cars-title">Funko POP! Severus Snape ФАНКО ПОП! Северус Снейп</a>
-                        <div class="card-text my-1">
-                            <div class="row">
-                                <div class="col-6">
-                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
-                                <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau24">
-  <label class="form-check-label" for="flexCheckDefau24">
-    Сравнить
-  </label>
-</div>
-                            </div>
-                        </div>
-                        <div class="col-6 ">
-                            <div class="border border-1 rounded-pill p-1 ps-2"> 
-                            <div class="rating-mini ">
-    <span class="active"></span>    
-    <span class="active"></span>    
-    <span class="active"></span>  
-    <span ></span>    
-    <span></span>
-</div> <span>42</span>
-                        </div>  
-                    </div>
-<div class="row ">
-        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F3B721; ">
-            <h3>1 290 ₽</h3>
-        </div>
-        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
-                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
-                            </div>
-                        </div>
-                </div>
-                    <div class="card-footer" style="border-top: none; background-color: #F3B721">
-                        <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
-                        <p style="margin-bottom: 1%">Пункты выдачи: <a class="ooo" href="#">доступны</a></p>
-                        <p>Отзывы: <a class="ooo" href="#">2 отзыва</a></p>
-                    </div>          </div>  
-            </div></div>
-            <div class="col-12 col-md-4 col-sm-6">
-                <div class="card"  >
-                    <div class="card-header p-0">
-                        <img class="card-img-top" src="images/products2/6.jpg">
-                    </div>
-                    <div class="card-body">
-                        <a href="shop6.html" class="cars-title">Funko POP! Lord Voldemort (with Nagini) ФАНКО ПОП! Лорд Волдеморт со змеёй</a>
-                        <div class="card-text my-1">
-                            <div class="row">
-                                <div class="col-6">
-                            <div class=" border border-1 rounded-pill p-1 ps-2 hov" >
-                                <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefau25">
-  <label class="form-check-label" for="flexCheckDefau25">
-    Сравнить
-  </label>
-</div>
-                            </div>
-                        </div>
-                        <div class="col-6 ">
-                            <div class="border border-1 rounded-pill p-1 ps-2"> 
-                            <div class="rating-mini ">
-    <span class="active"></span>    
-    <span class="active"></span>    
-    <span class="active"></span>  
-    <span class="active"></span>    
-    <span class="active"></span>
-</div> <span>18</span>
-                        </div>  
-                    </div>
-<div class="row ">
-        <div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F3B721; ">
-            <h3>1 290    ₽</h3>
-        </div>
-        <div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-                <i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                <div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
-                    <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </div>
-                            </div>
-                        </div>
-                </div>
-                    <div class="card-footer" style="border-top: none; background-color: #F3B721">
-                        <p style="margin-bottom: 1%">В наличии: <a class="ooo" href="#">в 3 магазинах</a></p>
-                        <p style="margin-bottom: 1%">Пункты выдачи: <a class="ooo" href="#">доступны</a></p>
-                        <p>Отзывы: <a class="ooo" href="#">2 отзыва</a></p>
-                    </div>          </div>
-            </div>
-        </div>
+            
         </div>
 
 
@@ -551,6 +579,7 @@ background-color: #FA820A;
 
         </div></div></div>    
     </div>
+</div>
 </div>
   
 

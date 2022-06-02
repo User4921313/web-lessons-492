@@ -78,3 +78,49 @@ a.aoa{
 	color: #FA820A;
 	text-decoration: none;
 }
+
+.form-check:checked { 
+	background-color: #FA820A;
+}
+
+
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating-mini span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgrey;
+}
+.rating-mini > span:before {
+    content: '★';
+}
+.rating-mini > span.active {
+    color:  #FA820A;
+}
+.form-check-input:checked { 
+background-color: #FA820A;
+
+}
+
+.btn: {
+    font-weight: 600;
+}
+.btn:hover, .form-check:hover,.dropdown-item:hover, .hov:hover {
+    background-color: #FA820A;
+}
+.ooo:hover {
+	color: #FA820A; 
+}
+
+.form-control.me-2 {
+	background-color: #FFFFF0;
+}
+
+a.page-link:hover {
+	background-color: #FA820A;
+	color: #000000;
+}
